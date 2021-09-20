@@ -1,0 +1,46 @@
+body{
+    background-color: gray;
+
+}
+.navbar{
+    background-color: indigo;
+}
+li a{
+    color: yellow !important;
+    font-size: 20px;
+}
+li a:hover{
+    color: indigo !important;
+    background-color: lightyellow;
+}
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+nav{
+    height: 70px;
+}
+.nav-link{
+    padding: 20px;
+}
+@media(max-width:600px){
+    nav{
+        height: auto;
+    }
+    .nav-link{
+        padding: 10px;
+    }
+}
+.back{
+    background-color: orange;
+    height: 500px;
+}
+.back a{
+    text-decoration: none;
+}
+.back a:hover{
+    background-color: rgb(147, 147, 184);
+}
+.back h1{
+    color: rgb(211, 91, 91);
+}

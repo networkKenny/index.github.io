@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: gray;
+    z-index: 1;
+    padding-bottom: 100px;
+    text-decoration: none;
+}
+.back{
+    position: fixed;
+    top:0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+@keyframes change-color{
+    from{color: red;}
+    to{color: blue;}
+}
+.a-animation{
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}

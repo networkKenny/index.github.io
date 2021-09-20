@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 22px;
+}
+body{
+    background-color: gray;
+
+}
+.navbar{
+    background-color: indigo;
+}
+li a{
+    color: yellow !important;
+    font-size: 20px;
+}
+li a:hover{
+    color: indigo !important;
+    background-color: lightyellow;
+}
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+nav{
+    height: 70px;
+}
+.nav-link{
+    padding: 20px;
+}
+@media(max-width:600px){
+    nav{
+        height: auto;
+    }
+    .nav-link{
+        padding: 10px;
+    }
+}
+header{
+    background-color: yellow;
+    margin-top: 40px;
+    height: 300px;
+}
+section{
+    background-color: white;
+}
+section img{
+    width: 600px;
+    height: 430px;
+}
+.class a{
+    text-decoration: none;
+    background-color: rgb(182, 173, 173);
+    color: blue;
+}
+.class a:hover{
+    background-color: rgb(113, 113, 192);
+}
+.class{
+    margin-top: 100px;
+    background-color: rgb(214, 30, 30);
+}
+.color{
+    color: gray;
+}
+.bottom{
+    border-top: 5px solid black ;
+    background-color: gray;
+    display: flex;
+    
+}
+.bottom div a{
+    color: brown;
+    text-decoration: none;
+}
+.btn-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 400px;
+    background-color: gray;
+    margin-top: -30px;
+}
+.btn1{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: lightblue;
+    background-color: darkred;
+    font-size: 30px;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+}
+.btn1:hover{
+    box-shadow: inset 300px 0px 0px 0px yellow;
+    color: darkblue;
+    
+    cursor: pointer;
+    /* box-shaddow 1 = x 2 = y 3 = 模糊 4 = 集中*/
+}
+.btn2{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: lightskyblue;
+    background-color: rgb(243, 19, 19);
+    font-size: 30px;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+    position: relative;
+    z-index: 1;
+}
+.btn2:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+.btn2:before{
+    background-color: lightgreen;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transition: 0.5s all ease;
+}
+.btn2:hover:before{
+    transition: 0.5s all ease;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    border-radius: 20px;
+}
