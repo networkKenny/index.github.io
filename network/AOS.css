@@ -1,0 +1,19 @@
+img{
+    width: 100%;
+    padding: 10px;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    background-color: lightyellow;
+    margin: 30px 80px 30px 80px;
+    border-radius: 20px;
+}
+.container{
+    background-color: rgb(177, 169, 169);
+}
+.box a{
+    text-decoration: none;
+    color: maroon;
+}
